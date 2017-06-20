@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MarketPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entidades.Pantallas</class>
+    <class>entidades.Comprador</class>
+    <class>entidades.Vendedor</class>
+    <class>entidades.Factura</class>
+    <class>entidades.Inventario</class>
+    <class>entidades.Perfil</class>
+    <class>entidades.Proveedor</class>
+    <class>entidades.Perfilpantalla</class>
+    <class>entidades.Tablapk</class>
+    <class>entidades.Sucursal</class>
+    <class>entidades.Usuarios</class>
+    <class>entidades.Detalle</class>
+    <class>entidades.Marca</class>
+    <class>entidades.Categoria</class>
+    <class>entidades.Estadisticas</class>
+    <class>entidades.Parametrossistema</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/juan"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="mauro"/>
+    </properties>
+  </persistence-unit>
+</persistence>
